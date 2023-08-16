@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.greetings{
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.dashboard{
+    display: flex;
+    width: 100%;
+    height: 22vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.groceries-dashboard{
+    width: 170px;
+    height: 170px;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0,0.6);
+    transition: 0.5s;
+}
+
+.groceries-dashboard:active{
+    transform: scale(0.96);
+}
+
+.groceries-dashboard-upper{
+    width: 100%;
+    height: 110px;
+    background-color: aqua;
+    padding: 15px;
+}
+
+.upper-content{
+    font-weight: 600;
+}
+
+.grocery-count{
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.upper-heading{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.groceries-dashboard-lower{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+
+.others-dashboard{
+    width: 170px;
+    height: 170px;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0,0.6);
+    transition: 0.5s;
+}
+
+.others-dashboard:active{
+    transform: scale(0.96);
+}
+
+.others-dashboard-upper{
+    width: 100%;
+    height: 110px;
+    background-color: violet;
+    padding: 15px;
+}
+
+
+.other-count{
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.others-dashboard-lower{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+
+/*Groceries*/
+
+.lower{
+    min-height: 68vh;
+    min-width: 100%;
+    display: flex;
+    overflow-x: scroll;
+
+}
+
+.lower2{
+    position: absolute;
+    top:102vh;
+    width: 100%;
+    height: 68vh;
+}
+
+
+.grocery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    height: 68vh;
+}
+
+.heading{
+    height: 7vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.groceries-list{
+    width: 95%;
+    padding: 10px;
+    height: 60vh;
+    background-color: #e0e0e0;
+    border-radius: 30px;
+    overflow-y: scroll;
+}
+
+.groceries-list::-webkit-scrollbar{
+    display: none;
+}
+
+.groceries-content{
+    width: 100%;
+    height: 90px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.groceries-content:nth-last-child(1){
+    margin-bottom: 0px;
+}
+
+.groceries-content-left{
+    width: 80%;
+    background-color: rgb(255, 205, 113);
+    height: 100%;
+    padding: 15px 30px 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.groceries-content-left-upper{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.groceries-content-left-lower{
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 5px;
+    color: rgb(56, 56, 56);
+}
+
+.groceries-content-right{
+    width: 20%;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 25, 25);
+    font-size: 25px;
+}
+
+#grocery-delete{
+    box-shadow: 0px 0px 10px 0px rgb(255, 25, 25) ;
+}
+
+
+
+/***************/
+
+.other{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    height: 68vh;
+}
+
+
+.other{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    height: 68vh;
+}
+
+
+.others-list{
+    width: 95%;
+    padding: 10px;
+    height: 60vh;
+    background-color: #e0e0e0;
+    border-radius: 30px;
+    overflow-y: scroll;
+}
+
+.others-list::-webkit-scrollbar{
+    display: none;
+}
+
+.others-content{
+    width: 100%;
+    height: 90px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.others-content:nth-last-child(1){
+    margin-bottom: 0px;
+}
+
+.others-content-left{
+    width: 80%;
+    background-color: rgb(158, 255, 113);
+    height: 100%;
+    padding: 15px 30px 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.others-content-left-upper{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.others-content-left-lower{
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 5px;
+    color: rgb(56, 56, 56);
+}
+
+.others-content-right{
+    width: 20%;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 25, 25);
+    font-size: 25px;
+}
+
+#other-delete{
+    box-shadow: 0px 0px 10px 0px rgb(255, 25, 25) ;
+}
+
+
+/***********************Form*************/
+
+/*------------Groceries Form-------------*/
+
+
+.grocery-form{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0px -4px 20px 0px rgba(0,0,0,0.35);
+}
+
+.grocery-upper{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.grocery-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    font-weight: 600; 
+}
+
+.close-icon{
+    position: absolute;
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.grocery-middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.grocery-important-form{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+
+input{
+    width: 60%;
+    height: 55px;
+    border-radius: 40px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 17px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.7);
+}
+
+select{
+        width: 60%;
+        height: 55px;
+        border-radius: 40px;
+        background-color: rgb(41, 41, 41);
+        color: white;
+        border: none;
+        text-align: center;
+        font-size: 17px;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.7);
+}
+
+.grocery-lower{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.grocery-add{
+    width: 150px;
+    height: 55px;
+    background-color: #78ff47;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 18px;
+    box-shadow: 0px 0px 15px 0px #78ff47;
+    transition: 0.5s;
+}
+
+.grocery-add:active{
+    transform: scale(0.95);
+}
+
+/*-----------------------------------*/
+
+/*------------Others Form-------------*/
+
+
+.other-form{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0px -4px 20px 0px rgba(0,0,0,0.35);
+}
+
+.other-upper{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.other-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    font-weight: 600;
+}
+
+.other-middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.other-important-form{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+
+
+
+.other-lower{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.other-add{
+    width: 150px;
+    height: 55px;
+    background-color: #78ff47;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 18px;
+    box-shadow: 0px 0px 15px 0px #78ff47;
+    transition: 0.5s;
+}
+
+.other-add:active{
+    transform: scale(0.95);
+}
+
+
