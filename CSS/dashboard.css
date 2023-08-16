@@ -38,7 +38,6 @@ body{
     height: 170px;
     border-radius: 40px;
     overflow: hidden;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0,0.6);
     transition: 0.5s;
 }
 
@@ -49,12 +48,15 @@ body{
 .groceries-dashboard-upper{
     width: 100%;
     height: 110px;
-    background-color: aqua;
+    background: rgb(86,171,47);
+    background: linear-gradient(90deg, rgba(86,171,47,1) 0%, rgba(168,224,99,1) 100%);
+    box-shadow: 0px 0px 20px 0px rgba(86,171,47,1);
     padding: 15px;
 }
 
 .upper-content{
     font-weight: 600;
+    color: rgb(49, 49, 49);
 }
 
 .grocery-count{
@@ -63,15 +65,29 @@ body{
     font-weight: 700;
 }
 
+
+.lower-icon{
+    margin-left: 10px;
+    color: white;
+}
+
 .upper-heading{
     font-size: 25px;
     font-weight: 600;
+    color: white;
 }
 
 .groceries-dashboard-lower{
     width: 100%;
     height: 60px;
-    background-color: black;
+    background: rgb(20,20,20);
+    background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(40,40,40,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 19px;
 }
 
 
@@ -80,7 +96,6 @@ body{
     height: 170px;
     border-radius: 40px;
     overflow: hidden;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0,0.6);
     transition: 0.5s;
 }
 
@@ -91,7 +106,8 @@ body{
 .others-dashboard-upper{
     width: 100%;
     height: 110px;
-    background-color: violet;
+    background: rgb(76,161,175);
+    background: linear-gradient(90deg, rgba(76,161,175,1) 0%, rgba(196,224,229,1) 100%);
     padding: 15px;
 }
 
@@ -106,7 +122,14 @@ body{
 .others-dashboard-lower{
     width: 100%;
     height: 60px;
-    background-color: black;
+    background: rgb(20,20,20);
+    background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(40,40,40,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 19px;
 }
 
 
@@ -150,7 +173,7 @@ body{
     padding: 10px;
     height: 60vh;
     background-color: #e0e0e0;
-    border-radius: 30px;
+    border-radius: 35px;
     overflow-y: scroll;
 }
 
@@ -160,7 +183,7 @@ body{
 
 .groceries-content{
     width: 100%;
-    height: 90px;
+    height: 75px;
     border-radius: 30px;
     overflow: hidden;
     display: flex;
@@ -173,7 +196,8 @@ body{
 
 .groceries-content-left{
     width: 80%;
-    background-color: rgb(255, 205, 113);
+    background: linear-gradient(90deg, rgba(86,171,47,1) 0%, rgba(168,224,99,1) 100%);
+    box-shadow: 0px 0px 20px 0px rgba(86,171,47,1);
     height: 100%;
     padding: 15px 30px 15px 30px;
     display: flex;
@@ -195,18 +219,16 @@ body{
 
 .groceries-content-right{
     width: 20%;
-    background-color: black;
+    background-color: rgb(53, 53, 53);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(255, 25, 25);
-    font-size: 25px;
+    font-size: 20px;
+    color: rgb(247, 67, 67);
 }
 
-#grocery-delete{
-    box-shadow: 0px 0px 10px 0px rgb(255, 25, 25) ;
-}
 
 
 
@@ -235,7 +257,7 @@ body{
     padding: 10px;
     height: 60vh;
     background-color: #e0e0e0;
-    border-radius: 30px;
+    border-radius: 35px;
     overflow-y: scroll;
 }
 
@@ -245,7 +267,7 @@ body{
 
 .others-content{
     width: 100%;
-    height: 90px;
+    height: 75px;
     border-radius: 30px;
     overflow: hidden;
     display: flex;
@@ -258,7 +280,8 @@ body{
 
 .others-content-left{
     width: 80%;
-    background-color: rgb(158, 255, 113);
+    background: rgb(76,161,175);
+    background: linear-gradient(90deg, rgba(76,161,175,1) 0%, rgba(196,224,229,1) 100%);
     height: 100%;
     padding: 15px 30px 15px 30px;
     display: flex;
@@ -280,13 +303,14 @@ body{
 
 .others-content-right{
     width: 20%;
-    background-color: black;
+    background-color: rgb(53, 53, 53);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(255, 25, 25);
-    font-size: 25px;
+    font-size: 20px;
+    color: rgb(247, 67, 67);
 }
 
 #other-delete{
