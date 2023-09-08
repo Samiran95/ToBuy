@@ -8,189 +8,182 @@
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <script src="JS/gsap.min.js" defer></script>
     <script src="JS/animate.js" defer></script>
+    <script src="JS/grocfunction.js" defer></script>
+    <script src="JS/othfunction.js" defer></script>
+    <script src="JS/count.js" defer></script>
 
     <title>To Buy Dashboard</title>
 </head>
 
 <body>
     <div class="greetings">
-        Welcome back!
-    </div>
-    <div class="dashboard">
-        <div class="groceries-dashboard" onclick="groceryDisplay()">
-            <div class="groceries-dashboard-upper">
-                <div class="upper-heading">Groceries</div>
-                <div class="upper-content">
-                    Items Pending :
-                    <div class="grocery-count">3</div>
-                </div>
+        <div class="actual-greetings">Welcome back!</div>
+        <div class="total-counts">
+            <div class="count-container">
 
             </div>
-            <div class="groceries-dashboard-lower">
-                <div class="lower-word">Click</div><div class="lower-icon"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+    </div>
+
+    <!------------------------>
+    <div class="dashboard-main">
+        <div class="dashboard-actual">
+            <div class="groceries-dashboard" onclick="groceryDisplay()">
+                <div class="groceries-dashboard-upper">
+                    <div class="groceries-upper-heading">Groceries</div>
+                    <div class="upper-content">
+                        Items Pending :
+                        <div class="grocery-count"></div>
+                    </div>
+
+                </div>
+                <div class="groceries-dashboard-lower">
+                    <div class="lower-word">Click</div>
+                    <div class="lower-icon"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </div>
+            </div>
+
+            <div class="others-dashboard" onclick="otherDisplay()">
+                <div class="others-dashboard-upper">
+                    <div class="others-upper-heading">Others</div>
+                    <div class="upper-content">
+                        Items Pending :
+                        <div class="other-count"></div>
+                    </div>
+                </div>
+                <div class="others-dashboard-lower">
+                    <div class="lower-word">Click</div>
+                    <div class="lower-icon"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </div>
             </div>
         </div>
 
+        <div class="dashboard-animate">
 
-        <div class="others-dashboard" onclick="otherDisplay()">
-            <div class="others-dashboard-upper">
-                <div class="upper-heading">Others</div>
-                <div class="upper-content">
-                    Items Pending :
-                    <div class="other-count">3</div>
+            <div class="groceries-dashboard-animate" onclick="groceryDisplay()">
+                <div class="groceries-dashboard-upper">
+                    <div class="groceries-upper-heading">Loading...</div>
+                    <div class="upper-content">
+                        Items Pending :
+                        <div class="grocery-count-animate">...</div>
+                    </div>
+
+                </div>
+                <div class="groceries-dashboard-lower">
+                    <div class="lower-word">Click</div>
+                    <div class="lower-icon"><i class="fa-solid fa-circle-chevron-right"></i></div>
                 </div>
             </div>
-            <div class="others-dashboard-lower">
-                <div class="lower-word">Click</div><div class="lower-icon"><i class="fa-solid fa-circle-chevron-right"></i></div>
+
+
+
+            <div class="others-dashboard-animate" onclick="otherDisplay()">
+                <div class="others-dashboard-upper">
+                    <div class="others-upper-heading">Loading...</div>
+                    <div class="upper-content">
+                        Items Pending :
+                        <div class="other-count-animate">...</div>
+                    </div>
+
+                </div>
+                <div class="others-dashboard-lower">
+                    <div class="lower-word">Click</div>
+                    <div class="lower-icon"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </div>
             </div>
+
         </div>
 
 
+
+
+
     </div>
+
+    <!----------------------------->
     <div class="lower">
         <div class="grocery">
             <div class="heading">Groceries Pending List</div>
             <div class="groceries-list" ondblclick="groceryForm()">
-
-
-                <div class="groceries-content">
-                    <div class="groceries-content-left">
-                        <div class="groceries-content-left-upper">Rice </div>
-                        <div class="groceries-content-left-lower">1&nbspKG</div>
-                    </div>
-                    <div class="groceries-content-right" onclick=""><i class="fa-solid fa-trash"
-                            id="grocery-delete"></i></div>
+                <div class="no-items">
+                    <div class="smiley-container"><i class="fa-regular fa-face-smile"></i></div>
                 </div>
-
-                <div class="groceries-content">
-                    <div class="groceries-content-left">
-                        <div class="groceries-content-left-upper">Rice </div>
-                        <div class="groceries-content-left-lower">1&nbspKG</div>
-                    </div>
-                    <div class="groceries-content-right"><i class="fa-solid fa-trash" id="grocery-delete"></i></div>
-                </div>
-
-
-                <div class="groceries-content">
-                    <div class="groceries-content-left">
-                        <div class="groceries-content-left-upper">Rice </div>
-                        <div class="groceries-content-left-lower">1&nbspKG</div>
-                    </div>
-                    <div class="groceries-content-right"><i class="fa-solid fa-trash" id="grocery-delete"></i></div>
-                </div>
-
-
-                <div class="groceries-content">
-                    <div class="groceries-content-left">
-                        <div class="groceries-content-left-upper">Rice </div>
-                        <div class="groceries-content-left-lower">1&nbspKG</div>
-                    </div>
-                    <div class="groceries-content-right"><i class="fa-solid fa-trash" id="grocery-delete"></i></div>
-                </div>
-
-
-                <div class="groceries-content">
-                    <div class="groceries-content-left">
-                        <div class="groceries-content-left-upper">Rice </div>
-                        <div class="groceries-content-left-lower">1&nbspKG</div>
-                    </div>
-                    <div class="groceries-content-right"><i class="fa-solid fa-trash" id="grocery-delete"></i></div>
-                </div>
-
-                <div class="groceries-content">
-                    <div class="groceries-content-left">
-                        <div class="groceries-content-left-upper">Rice </div>
-                        <div class="groceries-content-left-lower">1&nbspKG</div>
-                    </div>
-                    <div class="groceries-content-right"><i class="fa-solid fa-trash" id="grocery-delete"></i></div>
-                </div>
-
-
-
+            </div>
+            <div class="groceries-list-animate">
+                <div class="loading-word">Loading...</div>
             </div>
         </div>
-
-
-
     </div>
-
-
-
-
-
 
     <div class="lower2">
 
         <div class="other">
-            <div class="heading">Other Heading</div>
+            <div class="heading">Others Pending List</div>
             <div class="others-list" ondblclick="otherForm()">
 
-                <div class="others-content">
-                    <div class="others-content-left">
-                        <div class="others-content-left-upper">Rice </div>
-                        <div class="others-content-left-lower">1&nbspKG</div>
-                    </div>
-                    <div class="others-content-right" onclick=""><i class="fa-solid fa-trash" id="other-delete"></i>
-                    </div>
-                </div>
 
             </div>
         </div>
+    </div>
 
-
+    <div class="grocery-form">
+        <div class="grocery-upper">
+            <div class="grocery-heading">Groceries</div>
+            <div class="close-icon" onclick="closegroceryForm();"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="grocery-middle">
+            <form class="grocery-important-form">
+                <input type="text" placeholder="What?">
+                <input type="number" placeholder="How Many?">
+                <select>
+                    <option value="">Select</option>
+                    <option value="miligram">miligram</option>
+                    <option value="gram">gram</option>
+                    <option value="KG">KG</option>
+                    <option value="mililitre">mililitre</option>
+                    <option value="Litre">Litre</option>
+                    <option value="Quantity">Quantity</option>
+                </select>
+                <input id="default" type="text" value="Groceries" readonly>
+            </form>
+            <div class="grocery-lower">
+                <div class="grocery-add" onclick="grocAdd()"><i class="fa-solid fa-plus"></i></div>
+            </div>
+        </div>
     </div>
 
 
-        <div class="grocery-form">
-            <div class="grocery-upper">
-                <div class="grocery-heading">Groceries</div>
-                <div class="close-icon" onclick="closegroceryForm();"><i class="fa-solid fa-xmark"></i></div>
-            </div>
-            <div class="grocery-middle">
-                <form class="grocery-important-form">
-                    <input type="text" placeholder="What?">
-                    <input type="number" placeholder="How Many?">
-                    <select>
-                        <option value="">Select</option>
-                        <option value="miligram">miligram</option>
-                        <option value="gram">gram</option>
-                        <option value="KG">KG</option>
-                        <option value="mililitre">mililitre</option>
-                        <option value="Litre">Litre</option>
-                        <option value="Quantity">Quantity</option>
-                    </select>
-                </form>
-                <div class="grocery-lower">
-                    <div class="grocery-add"><i class="fa-solid fa-plus"></i></div>
-                </div>
+    <div class="other-form">
+        <div class="other-upper">
+            <div class="other-heading">Others</div>
+            <div class="close-icon" onclick="closeotherForm()"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="other-middle">
+            <form class="other-important-form">
+                <input type="text" placeholder="What?">
+                <input type="number" placeholder="How Many?">
+                <select>
+                    <option value="">Select</option>
+                    <option value="miligram">miligram</option>
+                    <option value="gram">gram</option>
+                    <option value="KG">KG</option>
+                    <option value="mililitre">mililitre</option>
+                    <option value="Litre">Litre</option>
+                    <option value="Quantity">Quantity</option>
+                </select>
+                <input id="default" type="text" value="Others" readonly>
+            </form>
+            <div class="other-lower">
+                <div class="other-add" onclick="othAdd()"><i class="fa-solid fa-plus"></i></div>
             </div>
         </div>
+    </div>
 
+    <div class="full-page-animate">
 
-        <div class="other-form">
-            <div class="other-upper">
-                <div class="other-heading">Others</div>
-                <div class="close-icon" onclick="closeotherForm()"><i class="fa-solid fa-xmark"></i></div>
-            </div>
-            <div class="other-middle">
-                <form class="other-important-form">
-                    <input type="text" placeholder="What?">
-                    <input type="number" placeholder="How Many?">
-                    <select>
-                        <option value="">Select</option>
-                        <option value="miligram">miligram</option>
-                        <option value="gram">gram</option>
-                        <option value="KG">KG</option>
-                        <option value="mililitre">mililitre</option>
-                        <option value="Litre">Litre</option>
-                        <option value="Quantity">Quantity</option>
-                    </select>
-                </form>
-                <div class="other-lower">
-                    <div class="other-add"><i class="fa-solid fa-plus"></i></div>
-                </div>
-            </div>
-        </div>
+        <div class="namaste-word">Namaste !</div>
+
+    </div>
 
 
 </body>
