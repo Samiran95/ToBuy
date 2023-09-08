@@ -19,6 +19,7 @@ function grocAdd() {
         .then(res => res.text())
         .then(data => {
             grocRead()
+            readCount()
             alert(data)
             grocForm.reset()
         });
@@ -66,6 +67,7 @@ function delData(id){
     fetch(api+`?del=true&id=${id}`)
     .then(res=>res.text())
     .then(data=>{
+        readCount()
         grocRead()
         othRead()
         alert(data)

@@ -18,6 +18,7 @@ function othAdd(){
     .then(res => res.text())
     .then(data => {
         othRead()
+        readCount()
         alert(data)
         othForm.reset()
     });
