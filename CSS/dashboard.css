@@ -25,7 +25,7 @@ body{
 }
 
 .actual-greetings{
-    flex: 3;
+    flex: 5;
     font-size: 22px;
     font-weight: 600;
 }
