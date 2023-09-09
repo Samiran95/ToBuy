@@ -13,7 +13,6 @@ const assets = [
     'fontawesome/css/all.css',
     'fontawesome/sprites/solid.svg',
     'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap',
-    'https://script.google.com/macros/s/AKfycbzqcAr5iX6yO51NseJ1Y5icotGQMa2PNV6ySZjkso5DkVd_-TmsFD0Q8A_oNg8QOd1kDQ/exec'
 ];
 
 //cache size limit function
