@@ -1,14 +1,7 @@
 const cacheName = "app-shell-rsrs";
 const dynamicCacheName = "dynamic-cache-v1";
 const assets = [
-    '/',
-    'JS/animate.js',
-    'JS/app.js',
-    'JS/gsap.min.js',
-    'CSS/dashboard.css',
-    'fontawesome/css/all.css',
-    'fontawesome/sprites/solid.svg',
-    'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap',
+
 ];
 
 //cache size limit function
