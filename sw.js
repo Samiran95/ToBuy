@@ -2,7 +2,6 @@ const cacheName = "app-shell-rsrs";
 const dynamicCacheName = "dynamic-cache-v1";
 const assets = [
     '/',
-    'index.html',
     'JS/animate.js',
     'JS/app.js',
     'JS/gsap.min.js',
