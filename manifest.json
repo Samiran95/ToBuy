@@ -2,7 +2,7 @@
     "name" : "ToBuy",
     "short_name" : "ToBuy",
     "start_url" : "index.html",
-    "display" : "fullscreen",
+    "display" : "standalone",
     "background_color" : "white",
     "theme_color" : "white",
     "orientation" : "portrait-primary",
