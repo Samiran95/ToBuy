@@ -1,4 +1,3 @@
-const cacheName = "app-shell-rsrs";
 const dynamicCacheName = "dynamic-cache-v1";
 const assets = [
 
