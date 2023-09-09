@@ -242,7 +242,6 @@ body{
     background-color: #e0e0e0;
     border-radius: 40px;
     overflow-y: scroll;
-    display: flex;
 }
 
 .no-items{
