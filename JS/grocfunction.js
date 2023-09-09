@@ -58,7 +58,6 @@ function grocRead() {
         `
          } })
             grocContent.innerHTML= grocContents.join("");
-            console.log(data.count[1][0])
         })
 }
 grocRead()
